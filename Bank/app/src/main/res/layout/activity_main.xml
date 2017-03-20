@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bank.sunil.com.bank.MainActivity">
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/fragment" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.1">
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.3"
+           android:text="Show       Banks"
+           android:onClick="getBanks"
+           />
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.3"
+           android:text="Show ATM's"
+           android:onClick="getAtm"
+           />
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.3"
+           android:text="Show Hospitals"
+           android:onClick="getHospitals"
+           />
+
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:text="developed by @sunilkeshari"
+        android:gravity="center"
+        android:background="#002349"
+        android:textColor="#FF6481"
+        android:textSize="15sp"/>
+
+</LinearLayout>
